@@ -1,0 +1,117 @@
+html {
+  font-size: 10px;
+  body {
+    font-family: 'Helvetica Neue', 'Helvetica', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .container {
+        height: 400px;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        transform: translateY(-50%);
+        h1 {
+          font-size: 35px;
+          color: #ffffff;
+          text-align: center;
+          text-shadow: 2px 2px 0px rgba(0,0,0,.2);
+          font-weight: 500;
+          line-height: 20px;
+        }
+        .result {
+          max-width: 500px;
+          margin: 10px auto;
+          background: rgba(255,255,255,0.9);
+          border-radius: 5px;
+          box-shadow: 6px 6px 15px rgba(0,0,0,0.2);
+          padding: 1rem 2rem 1rem 2rem;
+          position: relative;
+          line-height: 3rem;
+          min-height: 30px;
+          p {
+            margin: 0 0 0rem;
+            font-size: 20px;
+          }
+          .button {
+            margin: 0.5rem 0;
+            float: right;
+            display: block;
+            font-size: 20px;
+            cursor: pointer;
+            color: #000000;
+            height: 10px;
+            &:hover {
+              color: #2F4F4F;
+              transition: ease 0.2s all;
+            }
+          }
+        }
+        #output {
+          padding-bottom: 15px;
+          .icon {
+            text-align: center;
+            margin: 0 auto;
+            width: 100%;
+            padding-top: 20px;
+            font-size: 120px;
+            color: #ffffff;
+            text-shadow: 4px 4px 4px rgba(0,0,0,.2);
+          }
+          .city, .weather, .temperature, .date, .time {
+            color: #ffffff;
+            text-transform: capitalize;
+            margin: 0 auto;
+            text-align: center;
+            text-shadow: 4px 4px 4px rgba(0,0,0,.2);
+            font-weight: 200;
+          }
+          .weather {
+            padding-top: 10px;
+            font-size: 40px;
+          }
+          .city {
+            font-size: 20px;
+          }
+          .temperature {
+            font-size: 50px;
+            font-weight: 100;
+          }
+          .date {
+            font-size: 60px;
+          }
+          .time {
+            font-size: 120px;
+          }
+          .date, .time {
+            font-weight: 400;
+            padding: 20px 0px;
+
+          }
+        }
+        .instructions {
+          margin: auto;
+          display: block;
+          max-width: 500px;
+          color: #ffffff;
+          text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+          font-size: 20px;
+          padding: 0.5rem 2rem;
+          background-color: rgba(255, 255, 255, 0.2);
+          ul {
+            text-align: left;
+            padding-left: 20px;
+            margin-top: -15px;
+          }
+        }
+      }
+    }
+  }
+}
